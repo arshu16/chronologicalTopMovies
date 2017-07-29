@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ISB</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="icon" href="favicon.png" sizes="16x16">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="header-container">
+        <span>Chronological Top 10 titles of the years (IMDB)</span>
+    </div>
+    <div class="main">
+        <div class="chronos"></div>
+        <div class="movies"></div>
+    </div>
+    <script src='https://d3js.org/d3.v4.js'></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        //Wait for all resources to be downloaded
+        window.addEventListener('load', init);
+
+        function init() {
+            var canvas = document.querySelector('.main .chronos');
+            var chronos = new ChronosTimeline(canvas);
+            chronos.init();
+            chronos.render();
+        }
+    </script>
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-102379311-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
+
+</html>
