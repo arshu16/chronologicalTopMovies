@@ -118,12 +118,14 @@ body {
   padding: 1rem;
   height: 80px;
   box-shadow: 0px -7px 36px black;
+
 }
 
 .header-container > span,
 .header-container > div {
   font-size: 1.5rem;
   color: white;
+      opacity: 0.4;
 }
 
 .main {
@@ -354,6 +356,7 @@ body {
 
 .movie-container h3 {
   margin-top: -17px;
+  opacity: 0.7;
 }
 
 .synopsis-container {
@@ -364,6 +367,7 @@ body {
 .synopsis-container p {
   margin: 0 10px;
   font-size: 20px;
+  opacity: 0.7;
 }
 
 .rating > span:before {
